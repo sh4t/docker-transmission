@@ -1,6 +1,6 @@
-FROM linuxserver/baseimage
+FROM sh4t/baseimage
 
-MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>
+MAINTAINER shat <shat@shat.io>
 
 ENV APTLIST="transmission-daemon"
 
