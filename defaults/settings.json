@@ -44,7 +44,7 @@
     "rpc-bind-address": "0.0.0.0",
     "rpc-enabled": true,
     "rpc-password": "{1ddd3f1f6a71d655cde7767242a23a575b44c909n5YuRT.f",
-    "rpc-port": 9091,
+    "rpc-port": 9093,
     "rpc-url": "/transmission/",
     "rpc-username": "",
     "rpc-whitelist": "127.0.0.1",
