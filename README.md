@@ -1,8 +1,4 @@
-![http://linuxserver.io](http://www.linuxserver.io/wp-content/uploads/2015/06/linuxserver_medium.png)
-
-The [LinuxServer.io](https://www.linuxserver.io/) team brings you another quality container release featuring auto-update on startup, easy user mapping and community support. Be sure to checkout our [forums](https://forum.linuxserver.io/index.php) or for real-time support our [IRC](https://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`.
-
-# linuxserver/transmission
+# sh4t/docker-transmission
 
 Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more. [Transmission](http://www.transmissionbt.com/about/)
 
@@ -11,12 +7,12 @@ Transmission is designed for easy, powerful use. Transmission has the features y
 ```
 docker create --name=transmission \
 -v /etc/localtime:/etc/localtime:ro \
--v <path to data>:/config \
--v <path to downloads>:/downloads \
--v <path to watch folder>:/watch \
+-v </path/to/data>:/config \
+-v </path/to/dls>:/downloads \
+-v </path/to/watch>:/watch \
 -e PGID=<gid> -e PUID=<uid> \
--p 9091:9091 -p 51413:51413 \
-linuxserver/transmission
+-p 9091:9093 -p 51413:51413 \
+sh4t/transmission
 ```
 
 **Parameters**
@@ -51,6 +47,7 @@ Webui is on port 9091, the settings.json file in /config has extra settings not 
 
 
 ## Versions
++ **FORK** forked from linuxserver/docker-transmission so I could customize.
 + **06.12.2015:** Separate mapping for watch folder.
 + **16.11.2015:** Initial Release. 
 
