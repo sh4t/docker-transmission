@@ -1,4 +1,4 @@
-FROM sh4t/baseimage
+FROM shat/baseimage
 
 MAINTAINER shat <shat@shat.io>
 
